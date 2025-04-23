@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Sehat - Better Life</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #f4f7f6;
+      color: #2e3c3a;
+      line-height: 1.6;
+    }
+    header {
+      background: #c8e6c9 url('image1.jpg') no-repeat center/cover;
+      padding: 5rem 2rem;
+      text-align: center;
+      color: #fff;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #ffffff;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+    header p {
+      font-size: 1.4rem;
+      margin-top: 0.5rem;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+    .section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeInUp 1s ease-in-out;
+    }
+    .section h2 {
+      color: #2c5f2d;
+      margin-bottom: 1rem;
+    }
+    .card {
+      background: #ffffff;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 0.5rem;
+      margin-top: 1rem;
+    }
+    .points {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .point-box {
+      background: #e8f5e9;
+      padding: 1rem;
+      border-radius: 0.8rem;
+      text-align: center;
+      animation: popIn 0.5s ease-in-out;
+    }
+    footer {
+      background: #c8e6c9;
+      padding: 1rem;
+      text-align: center;
+      color: #2c5f2d;
+      margin-top: 2rem;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes popIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Coffee Sehat</h1>
+    <p>Better Life in Every Sip</p>
+  </header>
+
+  <section class="section">
+    <div class="card">
+      <h2>Apa Itu Coffee Sehat?</h2>
+      <p>Kopi Sehat adalah kopi hasil fermentasi yang dirancang untuk memberikan manfaat kesehatan tambahan seperti menurunkan gula darah, kolesterol, menjaga kesehatan jantung, dan memperlancar peredaran darah. Diracik dari 100% biji kopi pilihan dan telah teruji aman untuk penderita diabetes dan gangguan metabolisme lainnya.</p>
+      <img src="image2.jpg" alt="Kopi Sehat - Produk">
+    </div>
+
+    <div class="card">
+      <h2>Kenapa Kopi Ini Disebut Kopi Obat?</h2>
+      <div class="points">
+        <div class="point-box">☕ Meningkatkan kadar antioksidan alami</div>
+        <div class="point-box">🦠 Mengandung probiotik yang baik untuk pencernaan</div>
+        <div class="point-box">🔥 Rendah asam – aman untuk lambung</div>
+        <div class="point-box">💪 Penyerapan nutrisi lebih optimal</div>
+      </div>
+      <img src="image3.jpg" alt="Fermentasi Kopi">
+    </div>
+
+    <div class="card">
+      <h2>Manfaat Untuk Penderita Diabetes</h2>
+      <div class="points">
+        <div class="point-box">✅ Menstabilkan kolesterol</div>
+        <div class="point-box">✅ Melancarkan peredaran darah</div>
+        <div class="point-box">✅ Mengurangi kebas & kesemutan</div>
+        <div class="point-box">✅ Membantu pemulihan stroke</div>
+      </div>
+      <img src="image4.jpg" alt="Manfaat Kopi untuk Kesehatan">
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Coffee Sehat. All rights reserved.
+  </footer>
+</body>
+</html>
